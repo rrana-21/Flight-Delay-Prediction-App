@@ -24,7 +24,7 @@ def allow_self_signed_https(allowed):
 def fetch_and_process_data(source_airport, destination_airport, out_date, class_of_service, sort_order, itinerary_type):
     allow_self_signed_https(True)  # Allow self-signed HTTPS
     # API parameters
-    api_key = "04add5b7cdmshd4b470181d45798p1428bbjsn3f4be7e144f4"
+    api_key = *"enter TripAdvisor api key here"*
     api_host = "tripadvisor16.p.rapidapi.com"
     url = "https://tripadvisor16.p.rapidapi.com/api/v1/flights/searchFlights"
 
@@ -122,7 +122,7 @@ def process_flight_data(flight, flights_data, flight_index):
 
 # Function to make request to ML model
 def request_ml_model(sub_flight_df):
-    ml_api_key = 'MJ62jbpd130GjJbvoMrI7hHS3PCzIPVm'
+    ml_api_key = *"enter Azure ML api key here"*
 
     def allowSelfSignedHttps(allowed):
         # bypass the server certificate verification on client side
